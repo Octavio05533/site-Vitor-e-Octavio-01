@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 6 - Média das Notas</title>
+</head>
+<body>
+  <h1>Exercício 6</h1>
+  <p id="media"></p>
+ 
+  <script>
+    let n1 = Number(prompt("Digite a 1ª nota:"));
+    let n2 = Number(prompt("Digite a 2ª nota:"));
+    let n3 = Number(prompt("Digite a 3ª nota:"));
+ 
+    let media = (n1 + n2 + n3) / 3;
+    let mensagem = "";
+ 
+    if (media > 6) {
+      mensagem = `A média é ${media.toFixed(1)} — Aprovado!`;
+    } else if (media === 6) {
+      mensagem = `A média é ${media.toFixed(1)} — Recuperação.`;
+    } else {
+      mensagem = `A média é ${media.toFixed(1)} — Reprovado.`;
+    }
+ 
+    document.getElementById("media").innerHTML = mensagem;
+  </script>
+</body>
+</html>
+ 
+ 

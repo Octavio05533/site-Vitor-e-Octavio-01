@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3 - Par ou Ímpar</title>
+</head>
+<body>
+  <h1>Exercício 3</h1>
+  <p id="verificar"></p>
+ 
+  <script>
+    let numero = Number(prompt("Digite um número:"));
+    
+    if (numero % 2 === 0) {
+      document.getElementById("verificar").innerHTML = `O número ${numero} é par.`;
+    } else {
+      document.getElementById("verificar").innerHTML = `O número ${numero} é ímpar.`;
+    }
+  </script>
+</body>
+</html>
+ 
